@@ -1,0 +1,43 @@
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background: #f9f9f9;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add-task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+
+    .add-task-input {
+      border: none;
+      border-bottom: 2px solid #bababa;
+    }
+  }
+}

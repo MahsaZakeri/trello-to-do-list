@@ -1,0 +1,14 @@
+<div class="card-list">
+  <div class="add-card">
+    <input class="add-card-input" [(ngModel)]="newCardTitle" placeholder="Add new card" />
+    <button class="add-card-button" (click)="addCard()">Add</button>
+  </div>
+
+  <div class="cards">
+    <app-card
+      *ngFor="let card of cards"
+      [card]="card"
+      (deleteCard)="deleteCard($event)"
+    ></app-card>
+  </div>
+</div>

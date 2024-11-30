@@ -1,0 +1,22 @@
+<div class="card-container">
+  <div class="card-header">
+    <span class="card-title">{{ card.title }}</span>
+    <button class="delete-card" (click)="emitDeleteCard()">Delete Card</button>
+  </div>
+
+  <div class="task-container">
+    <div class="tasks">
+      <app-task
+      *ngFor="let task of card.tasks"
+      [task]="task"
+      (deleteTask)="deleteTask($event)"
+      ></app-task>
+    </div>
+    
+    <div class="add-task">
+      <input class="add-task-input" [(ngModel)]="newTaskTitle" placeholder="Add new task" />
+      <button (click)="addTask()">Add</button>
+    </div>
+  </div>
+  </div>
+  

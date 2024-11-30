@@ -1,0 +1,20 @@
+$breakpoints: (
+  "small": 375px,
+  "m-medium": 425px,
+  "l-medium": 768px,
+  "medium": 1024px,
+  "large": 1366px,
+);
+
+/* usage example: @include mediaQuery('medium') { }  */
+@mixin mediaQuery($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
