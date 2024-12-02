@@ -1,7 +1,13 @@
 <div class="card-list">
   <div class="add-card">
-    <input class="add-card-input" [(ngModel)]="newCardTitle" placeholder="Add new card" />
-    <button class="add-card-button" (click)="addCard()">Add</button>
+    <input
+      class="add-card-input"
+      [(ngModel)]="newCardTitle"
+      placeholder="Add new card"
+    />
+    <div class="button-container add" (click)="addCard()">
+      <mat-icon svgIcon="tick_icon"></mat-icon>
+    </div>
   </div>
 
   <div class="cards">

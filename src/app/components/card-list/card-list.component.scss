@@ -18,6 +18,7 @@
   .add-card {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid #bababa;
     border-radius: 7px;
     background-color: #fff;
@@ -34,14 +35,6 @@
       width: 70%;
       border: none;
       border-bottom: 2px solid #bababa;
-    }
-
-    .add-card-button {
-      width: 30%;
-      background-color: #01448b;
-      border-radius: 7px;
-      border: 1px solid #bababa;
-      color: #fff;
     }
   }
 

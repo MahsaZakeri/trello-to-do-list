@@ -1,6 +1,9 @@
 <div class="task">
+  <div class="task-title">
     <input type="checkbox" [checked]="task.done" (change)="toggleDone()" />
     <span [class.completed]="task.done">{{ task.title }}</span>
-    <button (click)="emitDeleteTask()">Delete</button>
   </div>
-  
+  <div class="button-container delete" (click)="emitDeleteTask()">
+    <mat-icon svgIcon="cross_icon"></mat-icon>
+  </div>
+</div>

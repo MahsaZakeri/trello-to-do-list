@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from '../card/card.component';
 import { Card } from '../../models/card.model';
 
 @Component({
   selector: 'app-card-list',
   standalone: true,
-  imports: [CommonModule, FormsModule, CardComponent],
+  imports: [CommonModule, FormsModule, CardComponent, MatIconModule],
   templateUrl: './card-list.component.html',
   styleUrls: ['./card-list.component.scss'],
 })

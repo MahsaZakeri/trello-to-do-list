@@ -1,11 +1,21 @@
 .task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #bababa;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+
+  .task-title {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
+    font-size: 12px;
+
+    .completed {
+      text-decoration: line-through;
+      color: #bababa;
+    }
   }
-  
-  .completed {
-    text-decoration: line-through;
-    color: gray;
-  }
-  
+}

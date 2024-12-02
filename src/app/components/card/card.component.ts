@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TaskComponent } from '../task/task.component';
 import { Card, Task } from '../../models/card.model';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [CommonModule, FormsModule, TaskComponent],
+  imports: [CommonModule, FormsModule, TaskComponent, MatIconModule],
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })

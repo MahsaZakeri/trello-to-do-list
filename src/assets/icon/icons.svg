@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600"
+    height="600" viewBox="0 0 600 750">
+    <symbol id="tick_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" x="0" y="0">
+        <path
+            d="M8.32815 19.9721C7.79519 19.9721 7.30664 19.7279 6.99574 19.3059L0.333708 10.4232C-0.221462 9.69039 -0.0660145 8.64667 0.666809 8.0915C1.39963 7.53633 2.44335 7.69178 2.99852 8.4246L8.1727 15.3309L16.9 0.807676C17.3663 0.0304385 18.3878 -0.236043 19.1873 0.230299C19.9867 0.696642 20.231 1.71815 19.7646 2.5176L9.77159 19.1727C9.4829 19.639 8.99435 19.9499 8.43918 19.9721C8.41698 19.9721 8.37256 19.9721 8.35036 19.9721H8.32815Z"
+            fill="currentColor" />
+    </symbol>
+    <symbol id="cross_icon" width="20" height="20" viewBox="0 0 12 13" fill="none" x="40" y="0">
+        <path d="M1 1.5L11 11.5M11 1.5L1 11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+</svg>

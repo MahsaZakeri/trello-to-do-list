@@ -1,6 +1,6 @@
 .card-container {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -12,32 +12,34 @@
     justify-content: space-between;
 
     .card-title {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
     }
   }
-}
 
-.task-container {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 15px;
-
-  .tasks {
+  .task-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 15px;
-  }
+    border-top: 1px dotted #ccc;
+    padding-top: 16px;
 
-  .add-task {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 20px;
+    .tasks {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-    .add-task-input {
-      border: none;
-      border-bottom: 2px solid #bababa;
+    .add-task {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 20px;
+
+      .add-task-input {
+        border: none;
+        border-bottom: 2px solid #bababa;
+      }
     }
   }
 }
